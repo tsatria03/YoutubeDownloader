@@ -1,0 +1,21 @@
+new in 1.0
+Fixed issue where playlist title path would default to "NA" for single videos.
+Status messages are now reliably shown after each download completes.
+Made it so All controls are screen reader-friendly and keyboard-navigable.
+Added progress beep system with Enable/disable toggle via checkbox.
+Added a way to set the progress interval by 1%, 5%, or 10% selection via combo box.
+Added Variable-pitch beeps. Beep tone increases with download percentage. Success beep plays at end of download if enabled.
+Added a progress bar to visually track download percentage.
+Added an optional status label above the progress bar.
+Added a real status bar at the bottom of the window.
+Introduced a checkbox to toggle whether messages appear in the top label or bottom status bar. 
+Added a checkbox to "Download full playlists and channels if available"
+Prevented creation of "NA" folders when downloading single videos by disabling playlist templating if not selected.
+Default state of the checkbox is unchecked to avoid folder clutter. 
+Added Support for audio and video downloading from YouTube using yt-dlp. Audio formats include mp3, wav, ogg, and more. Video formats include mp4, avi, mkv, and more.
+Made it so the app Automatically creates missing directories if the download path doesn't exist.
+Made it so the app's Default save location is set to ./dl folder (in app directory) if no path is selected.
+Added Alt+D to jump to YouTube URL field.
+Added Alt+L to jump to download location field.
+Added Escape key and Exit button for convenient application closing. 
+Built a fully accessible GUI using wxPython for blind-friendly use.
